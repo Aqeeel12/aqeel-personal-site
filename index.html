@@ -6,7 +6,7 @@
   <title>Aqeel Maseeroor — Cybersecurity Portfolio</title>
   <meta name="description" content="Cybersecurity portfolio of Mohammed Aqeel Maseeroor — Penetration Testing, Red Teaming, Secure Programming.">
   <meta name="author" content="Mohammed Aqeel Maseeroor">
-  <meta name="keywords" content="Cybersecurity, Pentesting, Red Team, Linux, Networking, Aqeel Maseeroor">
+  <link rel="icon" type="image/png" href="/aqeel-personal-site/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/aqeel-personal-site/style.css">
@@ -16,13 +16,12 @@
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <div class="nav-logo">AM<span class="accent">_</span></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#badges">Badges</a></li>
       <li><a href="#certifications">Certs</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="/aqeel-personal-site/Mohammed_Aqeel_CV.pdf" target="_blank" class="nav-resume">Resume</a></li>
@@ -33,16 +32,18 @@
 
 <!-- HERO -->
 <section class="hero" id="about">
-  <div class="hero-bg">
-    <canvas id="matrixCanvas"></canvas>
-  </div>
+  <canvas id="matrixCanvas"></canvas>
   <div class="hero-content">
-    <p class="hero-greeting">&gt; Initializing profile...</p>
+    <div class="hero-avatar">
+      <img src="/aqeel-personal-site/favicon.png" alt="Aqeel">
+    </div>
+    <p class="hero-greeting"><span class="typed" id="typed"></span><span class="cursor">|</span></p>
     <h1 class="hero-name">Mohammed Aqeel<br><span class="hero-name-last">Maseeroor</span></h1>
     <h2 class="hero-title">Cybersecurity Student <span class="accent">//</span> Pentester <span class="accent">//</span> Red Team</h2>
     <p class="hero-desc">Computer Science undergraduate specializing in Cybersecurity with hands-on experience in penetration testing, vulnerability assessment, and secure programming. Proficient in Metasploit, Nmap, Wireshark, and Burp Suite.</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="/aqeel-personal-site/Mohammed_Aqeel_CV.pdf" target="_blank" class="btn-outline">Download CV</a>
       <a href="#contact" class="btn-outline">Get In Touch</a>
     </div>
     <div class="hero-socials">
@@ -55,58 +56,25 @@
       <a href="mailto:aqeelmasroor741@gmail.com" title="Email">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
       </a>
+      <a href="https://tryhackme.com" target="_blank" title="TryHackMe">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.705 0C7.54 0 4.902 2.285 4.374 5.298A4.002 4.002 0 0 0 4.4 13.17v.03a5.255 5.255 0 0 0 5.254 5.254h5.196a5.255 5.255 0 0 0 5.254-5.254 5.232 5.232 0 0 0-1.856-4.01 6.354 6.354 0 0 0-7.543-9.19zM8.39 14.137a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zm3.61 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zm3.61 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/></svg>
+      </a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <span>scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="section" id="education">
-  <div class="container">
-    <h2 class="section-title"><span class="accent">01.</span> Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Bachelor of Computer Science (Hons) in Cyber Security</h3>
-            <span class="timeline-date">2026 – Present</span>
-          </div>
-          <p class="timeline-org">Albukhary International University, Malaysia</p>
-          <p class="timeline-detail">Expected Graduation: 2028 &nbsp;|&nbsp; CGPA: <span class="accent">3.89 / 4.00</span></p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Foundation in Computing</h3>
-            <span class="timeline-date">2024 – 2025</span>
-          </div>
-          <p class="timeline-org">Albukhary International University, Malaysia</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div></div>
 </section>
 
 <!-- EXPERIENCE -->
 <section class="section section-alt" id="experience">
   <div class="container">
-    <h2 class="section-title"><span class="accent">02.</span> Experience</h2>
+    <h2 class="section-title"><span class="accent">01.</span> Experience</h2>
     <div class="exp-grid">
       <div class="exp-card">
         <div class="exp-card-header">
-          <div>
-            <h3>Python Programming Intern</h3>
-            <p class="exp-company">CodeAlpha</p>
-          </div>
+          <div><h3>Python Programming Intern</h3><p class="exp-company">CodeAlpha</p></div>
           <span class="exp-date">Jun – Jul 2025</span>
         </div>
-        <p class="exp-location">Kedah, Malaysia (Remote)</p>
+        <p class="exp-location">📍 Kedah, Malaysia (Remote)</p>
         <ul>
           <li>Developed Python-based programs and scripts as part of a structured internship program.</li>
           <li>Built a secure login system with input validation, password handling, and secure coding best practices.</li>
@@ -115,13 +83,10 @@
       </div>
       <div class="exp-card">
         <div class="exp-card-header">
-          <div>
-            <h3>Cyber Security Intern</h3>
-            <p class="exp-company">CodeAlpha</p>
-          </div>
+          <div><h3>Cyber Security Intern</h3><p class="exp-company">CodeAlpha</p></div>
           <span class="exp-date">Jun – Jul 2025</span>
         </div>
-        <p class="exp-location">Kedah, Malaysia (Remote)</p>
+        <p class="exp-location">📍 Kedah, Malaysia (Remote)</p>
         <ul>
           <li>Performed cybersecurity tasks including vulnerability assessment and secure coding practices.</li>
           <li>Studied and applied concepts in authentication, access control, and common web vulnerabilities.</li>
@@ -130,13 +95,10 @@
       </div>
       <div class="exp-card">
         <div class="exp-card-header">
-          <div>
-            <h3>Customer Service Agent &amp; Technician</h3>
-            <p class="exp-company">Startek</p>
-          </div>
+          <div><h3>Customer Service Agent &amp; Technician</h3><p class="exp-company">Startek</p></div>
           <span class="exp-date">Mar – Sep 2024</span>
         </div>
-        <p class="exp-location">Sri Lanka (On-site)</p>
+        <p class="exp-location">📍 Sri Lanka (On-site)</p>
         <ul>
           <li>Provided technical support and customer service to clients, resolving issues efficiently.</li>
           <li>Coordinated with technical teams to troubleshoot and escalate complex cases.</li>
@@ -150,157 +112,170 @@
 <!-- PROJECTS -->
 <section class="section" id="projects">
   <div class="container">
-    <h2 class="section-title"><span class="accent">03.</span> Projects</h2>
+    <h2 class="section-title"><span class="accent">02.</span> Projects</h2>
     <div class="projects-grid">
       <div class="project-card featured">
         <div class="project-card-top">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Aqeeel12" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
+          <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <a href="https://github.com/Aqeeel12" target="_blank" class="gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
         </div>
         <div class="project-tag">// Competition</div>
         <h3>AquaSense – IoT Heavy Metal Detection</h3>
-        <p>Low-cost IoT water quality monitoring system detecting heavy metals. Integrates computer vision on Raspberry Pi for color analysis and LoRaMesh communication for real-time remote monitoring.</p>
+        <p>Low-cost IoT water quality monitoring system detecting heavy metals. Integrates computer vision on Raspberry Pi for color analysis and LoRaMesh for real-time remote monitoring.</p>
         <p class="project-award">🏆 Hult Prize Competition — Runner Up</p>
-        <div class="project-tech">
-          <span>Raspberry Pi</span><span>ESP32</span><span>Computer Vision</span><span>LoRaMesh</span><span>IoT</span>
-        </div>
+        <div class="project-tech"><span>Raspberry Pi</span><span>ESP32</span><span>Computer Vision</span><span>LoRaMesh</span><span>IoT</span></div>
       </div>
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Aqeeel12" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
+          <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <a href="https://github.com/Aqeeel12" target="_blank" class="gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
         </div>
         <div class="project-tag">// Security</div>
         <h3>Secure Login System</h3>
         <p>Python project implementing secure login with input validation, password hashing, and secure coding practices. Built during CodeAlpha internship focusing on real-world authentication security.</p>
-        <div class="project-tech">
-          <span>Python</span><span>Security</span><span>Authentication</span>
-        </div>
+        <div class="project-tech"><span>Python</span><span>Security</span><span>Authentication</span></div>
       </div>
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Aqeeel12" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
+          <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <a href="https://github.com/Aqeeel12" target="_blank" class="gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
         </div>
         <div class="project-tag">// Computer Vision</div>
         <h3>HandWave-Snake</h3>
-        <p>Python-based Snake game controlled by real-time hand gestures via webcam. Uses MediaPipe and OpenCV to detect hand movements — classic Nokia Snake reimagined with computer vision.</p>
-        <div class="project-tech">
-          <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Game Dev</span>
-        </div>
+        <p>Python-based Snake game controlled by real-time hand gestures via webcam. Uses MediaPipe and OpenCV to detect hand movements — classic Snake reimagined with computer vision.</p>
+        <div class="project-tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Game Dev</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS — HACKING TERMINAL STYLE -->
 <section class="section section-alt" id="skills">
   <div class="container">
-    <h2 class="section-title"><span class="accent">04.</span> Skills</h2>
-    <div class="skills-grid">
-      <div class="skills-category">
-        <h3><span class="accent">&gt;</span> Technical Skills</h3>
-        <div class="skill-tags">
-          <span>Python</span><span>Bash Scripting</span><span>JavaScript</span><span>Linux</span>
-          <span>SQL</span><span>HTML</span><span>CSS</span><span>Git</span><span>GitHub</span>
-        </div>
+    <h2 class="section-title"><span class="accent">03.</span> Skills</h2>
+    <div class="terminal-box">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">aqeel@kali:~$</span>
       </div>
-      <div class="skills-category">
-        <h3><span class="accent">&gt;</span> Cybersecurity Tools</h3>
-        <div class="skill-tags">
-          <span>Metasploit</span><span>Nmap</span><span>Wireshark</span><span>Burp Suite</span>
-          <span>Kali Linux</span><span>Iptables</span><span>Firewall</span>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-cmd">cat</span> technical_skills.txt</div>
+        <div class="t-output">
+          <span class="tag">Python</span><span class="tag">Bash Scripting</span><span class="tag">JavaScript</span>
+          <span class="tag">Linux</span><span class="tag">SQL</span><span class="tag">HTML</span>
+          <span class="tag">CSS</span><span class="tag">Git</span><span class="tag">GitHub</span>
         </div>
+        <div class="t-line"><span class="t-cmd">cat</span> offensive_tools.txt</div>
+        <div class="t-output">
+          <span class="tag red-tag">Metasploit</span><span class="tag red-tag">Nmap</span>
+          <span class="tag red-tag">Wireshark</span><span class="tag red-tag">Burp Suite</span>
+          <span class="tag red-tag">Kali Linux</span><span class="tag red-tag">Iptables</span>
+          <span class="tag red-tag">Firewall</span>
+        </div>
+        <div class="t-line"><span class="t-cmd">cat</span> networking_systems.txt</div>
+        <div class="t-output">
+          <span class="tag dim-tag">Networking</span><span class="tag dim-tag">Docker</span>
+          <span class="tag dim-tag">Kubernetes</span><span class="tag dim-tag">MySQL</span>
+          <span class="tag dim-tag">Cron</span>
+        </div>
+        <div class="t-line"><span class="t-cmd">cat</span> soft_skills.txt</div>
+        <div class="t-output">
+          <span class="tag dim-tag">Critical Thinking</span><span class="tag dim-tag">Problem Solving</span>
+          <span class="tag dim-tag">Analytical Thinking</span><span class="tag dim-tag">Continuous Learning</span>
+          <span class="tag dim-tag">Adaptability</span><span class="tag dim-tag">Team Working</span>
+          <span class="tag dim-tag">Attention to Detail</span>
+        </div>
+        <div class="t-line"><span class="t-prompt">aqeel@kali:~$</span> <span class="t-blink">█</span></div>
       </div>
-      <div class="skills-category">
-        <h3><span class="accent">&gt;</span> Networking &amp; Systems</h3>
-        <div class="skill-tags">
-          <span>Networking</span><span>Docker</span><span>Kubernetes</span><span>MySQL</span><span>Cron</span>
-        </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRYHACKME BADGES -->
+<section class="section" id="badges">
+  <div class="container">
+    <h2 class="section-title"><span class="accent">04.</span> TryHackMe Badges</h2>
+    <p class="badges-subtitle">Earned through real labs and hands-on hacking challenges on <a href="https://tryhackme.com" target="_blank">TryHackMe</a></p>
+    <div class="badges-grid">
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/shieldapprentice.png" onerror="this.src='https://assets.tryhackme.com/img/badges/shieldapprentice.svg'" alt="Shield Apprentice">
+        <p>Shield Apprentice</p><span class="badge-rare">Rare: 5.7%</span>
       </div>
-      <div class="skills-category">
-        <h3><span class="accent">&gt;</span> Soft Skills</h3>
-        <div class="skill-tags">
-          <span>Critical Thinking</span><span>Problem Solving</span><span>Analytical Thinking</span>
-          <span>Continuous Learning</span><span>Adaptability</span><span>Team Working</span>
-          <span>Attention to Detail</span><span>Collaboration</span>
-        </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/metasploitable.png" onerror="this.src='https://assets.tryhackme.com/img/badges/metasploitable.svg'" alt="Metasploitable">
+        <p>Metasploitable</p><span class="badge-common">Common: 10.1%</span>
       </div>
-      <div class="skills-category">
-        <h3><span class="accent">&gt;</span> Languages</h3>
-        <div class="skill-tags">
-          <span>English — Fluent</span><span>Tamil — Native</span><span>Sinhala — Native</span>
-        </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/pentestingprinciples.png" onerror="this.src='https://assets.tryhackme.com/img/badges/pentestingprinciples.svg'" alt="Pentesting Principles">
+        <p>Pentesting Principles</p><span class="badge-common">Common: 10.5%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/blue.png" onerror="this.src='https://assets.tryhackme.com/img/badges/blue.svg'" alt="Blue">
+        <p>Blue</p><span class="badge-common">Common: 11.5%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/burped.png" onerror="this.src='https://assets.tryhackme.com/img/badges/burped.svg'" alt="Burp'ed">
+        <p>Burp'ed</p><span class="badge-rare">Rare: 5.5%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/introtohacking.png" onerror="this.src='https://assets.tryhackme.com/img/badges/introtohacking.svg'" alt="Intro to Web Hacking">
+        <p>Intro to Web Hacking</p><span class="badge-rare">Rare: 6.3%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/owasptop10.png" onerror="this.src='https://assets.tryhackme.com/img/badges/owasptop10.svg'" alt="OWASP Top 10">
+        <p>OWASP Top 10</p><span class="badge-rare">Rare: 9.9%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/networkingnerd.png" onerror="this.src='https://assets.tryhackme.com/img/badges/networkingnerd.svg'" alt="Networking Nerd">
+        <p>Networking Nerd</p><span class="badge-common">Common: 19.1%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/worldwideweb.png" onerror="this.src='https://assets.tryhackme.com/img/badges/worldwideweb.svg'" alt="World Wide Web">
+        <p>World Wide Web</p><span class="badge-common">Common: 22.5%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/webbed.png" onerror="this.src='https://assets.tryhackme.com/img/badges/webbed.svg'" alt="Webbed">
+        <p>Webbed</p><span class="badge-common">Common: 25.4%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/catlinux.png" onerror="this.src='https://assets.tryhackme.com/img/badges/catlinux.svg'" alt="cat linux.txt">
+        <p>cat linux.txt</p><span class="badge-common">Common: 31.7%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/swordapprentice.png" onerror="this.src='https://assets.tryhackme.com/img/badges/swordapprentice.svg'" alt="Sword Apprentice">
+        <p>Sword Apprentice</p><span class="badge-rare">Rare: 6.8%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/cyberready.png" onerror="this.src='https://assets.tryhackme.com/img/badges/cyberready.svg'" alt="Cyber Ready">
+        <p>Cyber Ready</p><span class="badge-rare">Rare: 7.9%</span>
+      </div>
+      <div class="badge-card">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/sessionheld.png" onerror="this.src='https://assets.tryhackme.com/img/badges/sessionheld.svg'" alt="Session Held">
+        <p>Session Held</p><span class="badge-rare">Rare: 1.4%</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-<section class="section" id="certifications">
+<section class="section section-alt" id="certifications">
   <div class="container">
-    <h2 class="section-title"><span class="accent">05.</span> Certifications &amp; Achievements</h2>
+    <h2 class="section-title"><span class="accent">05.</span> Certifications</h2>
     <div class="certs-grid">
-      <div class="cert-card highlight">
-        <div class="cert-icon">🏆</div>
-        <div><h4>Hult Prize Competition</h4><p>Runner-up — AquaSense IoT System</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🔐</div>
-        <div><h4>Cyber Security 101</h4><p>TryHackMe · Mar 2026</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🛡️</div>
-        <div><h4>Pre Security Certificate</h4><p>TryHackMe · Nov 2025 · THM-5RGBIGM7K1</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">⚔️</div>
-        <div><h4>Ethical Hacking Essentials (EHE)</h4><p>EC-Council · Jun 2025 · NKBMUAZQ2B8R</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🐉</div>
-        <div><h4>Kali Linux</h4><p>Board Infinity · May 2025 · GEF76RLAKYJR</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🌐</div>
-        <div><h4>JavaScript Essentials 1</h4><p>Cisco · May 2025</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🔒</div>
-        <div><h4>Foundations of Cybersecurity</h4><p>Google · Apr 2025 · ZEVVORXI7GXE</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">📡</div>
-        <div><h4>Ethical Hacking: Scanning Networks</h4><p>LinkedIn · Feb 2026</p></div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🕵️</div>
-        <div><h4>Ethical Hacking: Footprinting &amp; Recon</h4><p>LinkedIn · Feb 2026</p></div>
-      </div>
+      <div class="cert-card"><div class="cert-icon">🔐</div><div><h4>Cyber Security 101</h4><p>TryHackMe · Mar 2026</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🛡️</div><div><h4>Pre Security Certificate</h4><p>TryHackMe · Nov 2025 · THM-5RGBIGM7K1</p></div></div>
+      <div class="cert-card"><div class="cert-icon">⚔️</div><div><h4>Ethical Hacking Essentials (EHE)</h4><p>EC-Council · Jun 2025 · NKBMUAZQ2B8R</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🐉</div><div><h4>Kali Linux</h4><p>Board Infinity · May 2025 · GEF76RLAKYJR</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🌐</div><div><h4>JavaScript Essentials 1</h4><p>Cisco · May 2025</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🔒</div><div><h4>Foundations of Cybersecurity</h4><p>Google · Apr 2025 · ZEVVORXI7GXE</p></div></div>
+      <div class="cert-card"><div class="cert-icon">📡</div><div><h4>Ethical Hacking: Scanning Networks</h4><p>LinkedIn · Feb 2026</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🕵️</div><div><h4>Ethical Hacking: Footprinting &amp; Recon</h4><p>LinkedIn · Feb 2026</p></div></div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section section-alt" id="contact">
+<section class="section" id="contact">
   <div class="container contact-container">
     <h2 class="section-title"><span class="accent">06.</span> Get In Touch</h2>
     <p class="contact-desc">Looking for internship and job opportunities in Cybersecurity. Whether you have a question, an opportunity, or just want to connect — reach out!</p>
