@@ -7,15 +7,13 @@ window.addEventListener('scroll', () => {
 // MOBILE NAV
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
-if(navToggle) navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+if (navToggle) navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 
 // BACK TO TOP
 const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  backToTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
-});
-if(backToTop) backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+window.addEventListener('scroll', () => { backToTop.style.display = window.scrollY > 400 ? 'flex' : 'none'; });
+if (backToTop) backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 // TYPING EFFECT
 const phrases = [
@@ -42,14 +40,14 @@ function type() {
 }
 type();
 
-// MATRIX CANVAS — red
+// MATRIX CANVAS
 const canvas = document.getElementById('matrixCanvas');
 if (canvas) {
   const ctx = canvas.getContext('2d');
   const resize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
   resize();
   window.addEventListener('resize', resize);
-  const chars = '01アイウエカキABCDEF></?!@#$%^&*{}[]';
+  const chars = '01アイウエカABCDEF></?!@#$%^&*{}[]';
   const fs = 14;
   let drops = [];
   const initDrops = () => { drops = Array(Math.floor(canvas.width / fs)).fill(1); };
